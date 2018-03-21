@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+  
+   
+    <welcome-file-list>
+		<welcome-file>Home</welcome-file>
+	</welcome-file-list>
+  
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>Home</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>Registration</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>registerData</servlet-name>
+        <servlet-class>registerData</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Login</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+        <servlet-name>SmartPortablesSerializedDataStore</servlet-name>
+        <servlet-class>SmartPortablesSerializedDataStore</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>SaxParser4SmartPortableXMLdataStore</servlet-name>
+        <servlet-class>SaxParser4SmartPortableXMLdataStore</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>RemoveFromCartServlet</servlet-name>
+        <servlet-class>RemoveFromCartServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>Product</servlet-name>
+        <servlet-class>Product</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>Accessory</servlet-name>
+        <servlet-class>Accessory</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>CartServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>Cart</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <servlet-class>AddToCartServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>RegisterUserServlet</servlet-name>
+        <servlet-class>RegisterUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>SmartPortableUser</servlet-name>
+        <servlet-class>SmartPortableUser</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ValidateUser</servlet-name>
+        <servlet-class>ValidateUser</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>SignOut</servlet-name>
+        <servlet-class>SignOut</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>CheckoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>CreateOrder</servlet-name>
+        <servlet-class>CreateOrder</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>Orders</servlet-name>
+        <servlet-class>Orders</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ViewOrdersServlet</servlet-name>
+        <servlet-class>ViewOrdersServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>MySQLDataStoreUtilities</servlet-name>
+        <servlet-class>MySQLDataStoreUtilities</servlet-class>
+	</servlet>	
+	
+	<servlet>
+        <servlet-name>EditOrderServlet</servlet-name>
+        <servlet-class>EditOrderServlet</servlet-class>
+	</servlet>	
+	
+	<servlet>
+        <servlet-name>WriteReviewServlet</servlet-name>
+        <servlet-class>WriteReviewServlet</servlet-class>
+	</servlet>	
+	
+	<servlet>
+        <servlet-name>StoreReviewMessage</servlet-name>
+        <servlet-class>StoreReviewMessage</servlet-class>
+	</servlet>	
+	
+	<servlet>
+        <servlet-name>StoreReviewServlet</servlet-name>
+        <servlet-class>StoreReviewServlet</servlet-class>
+	</servlet>	
+	
+	<servlet>
+        <servlet-name>MongoDBDataStoreUtilities</servlet-name>
+        <servlet-class>MongoDBDataStoreUtilities</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>TrendingServlet</servlet-name>
+        <servlet-class>TrendingServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ViewReviewServlet</servlet-name>
+        <servlet-class>ViewReviewServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>DataAnalyticsServlet</servlet-name>
+        <servlet-class>DataAnalyticsServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ViewDataAnalytics</servlet-name>
+        <servlet-class>ViewDataAnalytics</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>InsertProductServlet</servlet-name>
+        <servlet-class>InsertProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>StoreNewProduct</servlet-name>
+        <servlet-class>StoreNewProduct</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>StoreNewProductMessage</servlet-name>
+        <servlet-class>StoreNewProductMessage</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>InventoryReportServlet</servlet-name>
+        <servlet-class>InventoryReportServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>SalesReportServlet</servlet-name>
+        <servlet-class>SalesReportServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>StoreManagerReportChoice</servlet-name>
+        <servlet-class>StoreManagerReportChoice</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>StoreManagerReportChoiceSales</servlet-name>
+        <servlet-class>StoreManagerReportChoiceSales</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ProductQuantityBarChartData</servlet-name>
+        <servlet-class>ProductQuantityBarChartData</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>BarChartServlet</servlet-name>
+        <servlet-class>BarChartServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>BarChartServletSales</servlet-name>
+        <servlet-class>BarChartServletSales</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>ProductSalesBarChartData</servlet-name>
+        <servlet-class>ProductSalesBarChartData</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>autocomplete</servlet-name>
+        <servlet-class>autocomplete</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>AjaxUtility</servlet-name>
+        <servlet-class>AjaxUtility</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>LookupProduct</servlet-name>
+        <servlet-class>LookupProduct</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>AddUpdateDeleteProduct</servlet-name>
+        <servlet-class>AddUpdateDeleteProduct</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>AddUpdateDeleteProductNavigation</servlet-name>
+        <servlet-class>AddUpdateDeleteProductNavigation</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>DeleteProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>DeleteProductMessage</servlet-name>
+        <servlet-class>DeleteProductMessage</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>UpdateProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>UpdateProductMessage</servlet-name>
+        <servlet-class>UpdateProductMessage</servlet-class>
+	</servlet>
+	
+	<servlet>
+        <servlet-name>DealMatchesUtilities</servlet-name>
+        <servlet-class>DealMatchesUtilities</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>registerData</servlet-name>
+        <url-pattern>/registerData</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>SmartPortablesSerializedDataStore</servlet-name>
+        <url-pattern>/SmartPortablesSerializedDataStore</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>SaxParser4SmartPortableXMLdataStore</servlet-name>
+        <url-pattern>/SaxParser4SmartPortableXMLdataStore</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Product</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Accessory</servlet-name>
+        <url-pattern>/Accessory</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/Cart</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/AddToCartServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>RegisterUserServlet</servlet-name>
+        <url-pattern>/RegisterUserServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>SmartPortableUser</servlet-name>
+        <url-pattern>/SmartPortableUser</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ValidateUser</servlet-name>
+        <url-pattern>/ValidateUser</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>SignOut</servlet-name>
+        <url-pattern>/SignOut</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/CheckoutServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>CreateOrder</servlet-name>
+        <url-pattern>/CreateOrder</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Orders</servlet-name>
+        <url-pattern>/Orders</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>RemoveFromCartServlet</servlet-name>
+        <url-pattern>/RemoveFromCartServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ViewOrdersServlet</servlet-name>
+        <url-pattern>/ViewOrdersServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>MySQLDataStoreUtilities</servlet-name>
+        <url-pattern>/MySQLDataStoreUtilities</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>EditOrderServlet</servlet-name>
+        <url-pattern>/EditOrderServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>WriteReviewServlet</servlet-name>
+        <url-pattern>/WriteReviewServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>StoreReviewMessage</servlet-name>
+        <url-pattern>/StoreReviewMessage</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>StoreReviewServlet</servlet-name>
+        <url-pattern>/StoreReviewServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>MongoDBDataStoreUtilities</servlet-name>
+        <url-pattern>/MongoDBDataStoreUtilities</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>TrendingServlet</servlet-name>
+        <url-pattern>/TrendingServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ViewReviewServlet</servlet-name>
+		<url-pattern>/ViewReviewServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DataAnalyticsServlet</servlet-name>
+		<url-pattern>/DataAnalyticsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ViewDataAnalytics</servlet-name>
+		<url-pattern>/ViewDataAnalytics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InsertProductServlet</servlet-name>
+		<url-pattern>/InsertProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>StoreNewProduct</servlet-name>
+		<url-pattern>/StoreNewProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>StoreNewProductMessage</servlet-name>
+		<url-pattern>/StoreNewProductMessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InventoryReportServlet</servlet-name>
+		<url-pattern>/InventoryReportServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SalesReportServlet</servlet-name>
+		<url-pattern>/SalesReportServlet</url-pattern>
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		<servlet-name>StoreManagerReportChoice</servlet-name>
+		<url-pattern>/StoreManagerReportChoice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>StoreManagerReportChoiceSales</servlet-name>
+		<url-pattern>/StoreManagerReportChoiceSales</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ProductQuantityBarChartData</servlet-name>
+		<url-pattern>/ProductQuantityBarChartData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>BarChartServlet</servlet-name>
+		<url-pattern>/BarChartServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>BarChartServletSales</servlet-name>
+		<url-pattern>/BarChartServletSales</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ProductSalesBarChartData</servlet-name>
+		<url-pattern>/ProductSalesBarChartData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>autocomplete</servlet-name>
+		<url-pattern>/autocomplete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AjaxUtility</servlet-name>
+		<url-pattern>/AjaxUtility</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LookupProduct</servlet-name>
+		<url-pattern>/LookupProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddUpdateDeleteProduct</servlet-name>
+		<url-pattern>/AddUpdateDeleteProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddUpdateDeleteProductNavigation</servlet-name>
+		<url-pattern>/AddUpdateDeleteProductNavigation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteProductServlet</servlet-name>
+		<url-pattern>/DeleteProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteProductMessage</servlet-name>
+		<url-pattern>/DeleteProductMessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateProductServlet</servlet-name>
+		<url-pattern>/UpdateProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateProductMessage</servlet-name>
+		<url-pattern>/UpdateProductMessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DealMatchesUtilities</servlet-name>
+		<url-pattern>/DealMatchesUtilities</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
